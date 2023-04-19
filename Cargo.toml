@@ -2,7 +2,15 @@
 name = "git3t"
 version = "0.1.0"
 edition = "2021"
+authors = ["Michał Sabiniarz <michal.sabiniarz@gmail.com>"]
+description = "A CLI tool to generating time reports from Gitlab"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+chrono = "0.4.24"
+clap = { version = "4.2.4", features = ["derive"] }
+graphql_client = { version = "0.12.0", features = ["reqwest"] }
+reqwest = { version = "0.11.16", features = ["json"] }
+serde = "1.0.160"
+tokio = { version = "1.27.0", features = ["full"] }

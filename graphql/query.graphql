@@ -1,0 +1,19 @@
+query UserTimelogs {
+  currentUser {
+    timelogs {
+      nodes {
+        id
+        spentAt
+        project {
+          name
+        }
+        issue {
+          id,
+          title
+        }
+        timeSpent
+      }
+    }
+  }
+}
+
